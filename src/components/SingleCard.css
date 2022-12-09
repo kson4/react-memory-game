@@ -1,0 +1,49 @@
+.card {
+  position: relative;
+  width: 28vw;
+  margin: 0.25rem;
+}
+.card img {
+  width: 100%;
+  display: block;
+  border: 2px solid #fff;
+  border-radius: 6px;
+}
+.card .front {
+  transform: rotateY(90deg);
+  transition: all ease-in 0.2s;
+  position: absolute;
+}
+.flipped .front {
+  transform: rotateY(0deg);
+  transition-delay: 0.2s;
+  background-color: #1b1523;
+  z-index: 1;
+}
+.card .back {
+  transition: all ease-in 0.2s;
+  transition-delay: 0.2s;
+}
+.flipped .back {
+  transform: rotateY(90deg);
+  transition-delay: 0s;
+}
+
+@media screen and (min-width: 800px) {
+  .card {
+    width: 20vw;
+    margin: 1rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card {
+    width: 15vw;
+    margin: 0.25rem;
+  }
+}
+@media screen and (min-width: 1900px) {
+  .card {
+    width: 12.5vw;
+    margin: 0.25rem;
+  }
+}
